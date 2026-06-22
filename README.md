@@ -28,5 +28,5 @@ Routes: `/` · `/experience` · `/skills` · `/about` · `/case-studies`
 
 ## Before deploy
 
-1. Replace `public/resume/Swapnil_Mishra_HR_Resume.pdf`
+1. Resume download: `public/resume/Swapnil_Mishra_HR_Resume.md` (served directly)
 2. Update `SITE.email` and `SITE.url` in `src/lib/site.ts`

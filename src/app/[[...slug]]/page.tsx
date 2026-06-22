@@ -281,11 +281,11 @@ function ExperiencePage() {
         </div>
         <Reveal className="mt-16">
           <h2 className="text-2xl font-bold">Education</h2>
-          <div className="mt-6 pl-8">
-            <h3 className="text-xl font-semibold">{educationContent.degree}</h3>
-            <p className="mt-1 text-sm text-[var(--text-tertiary)]">{educationContent.period}</p>
-            <p className="mt-2 text-sm text-[var(--text-secondary)]">MBA in Human Resource Management — building strategic HR and people operations foundation.</p>
-          </div>
+          <ul className="mt-6 space-y-3 pl-8">
+            {educationContent.qualifications.map((q) => (
+              <li key={q} className="text-sm text-[var(--text-secondary)]">{q}</li>
+            ))}
+          </ul>
         </Reveal>
         <Reveal className="mt-16">
           <h2 className="text-2xl font-bold">Key Achievements</h2>

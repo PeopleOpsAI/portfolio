@@ -12,9 +12,8 @@ export const SITE = {
   phone: "+91 9119725253",
   email: "mishraswapnil035@gmail.com",
   linkedin: "https://www.linkedin.com/in/swapnil-mishra-hr/",
-  resumePath: "/resume/Swapnil_Mishra_HR_Resume.pdf",
-  resumeMarkdownPath: "/resume/Swapnil_Mishra_HR_Resume.md",
-  resumeFilename: "Swapnil_Mishra_HR_Resume.pdf",
+  resumePath: "/resume/Swapnil_Mishra_HR_Resume.md",
+  resumeFilename: "Swapnil_Mishra_HR_Resume.md",
   url: "https://swapnilmishra.dev",
 } as const;
 
@@ -187,7 +186,7 @@ export const aboutContent = {
     "Over 3+ years at CodeGenIT, EPC Infracon, and BluPine Energy, I've supported 280+ employees, closed 100+ positions, and maintained 100% onboarding compliance. I partner with managers on employee relations, payroll coordination, and HR operations — not just recruitment.",
     "My goal is simple: streamline HR operations, strengthen employee relations, and create employee experiences people trust.",
   ],
-  credential: "MBA · Banasthali Vidyapith",
+  credential: "MBA in Human Resource Management (2022 – 2024)",
 };
 
 export const expertiseContent = {
@@ -340,8 +339,13 @@ export const toolCategories: ToolCategory[] = [
 export const educationContent = {
   label: "CREDENTIALS",
   title: "Education & Certifications",
-  degree: "MBA · Banasthali Vidyapith",
+  degree: "MBA in Human Resource Management",
   period: "2022 – 2024",
+  qualifications: [
+    "MBA in Human Resource Management (2022 – 2024)",
+    "Bachelor's in commerce (2019 – 2022)",
+    "Intermediate, CBSE (2018 – 2019)",
+  ],
 };
 
 export const certifications: Certification[] = [
@@ -406,7 +410,6 @@ export function getPersonJsonLd() {
     url: SITE.url,
     sameAs: [SITE.linkedin],
     knowsAbout: ["Human Resources Operations", "Employee Relations", "Talent Acquisition", "Onboarding", "Payroll Coordination"],
-    alumniOf: { "@type": "CollegeOrUniversity", name: "Banasthali Vidyapith" },
   };
 }
 
