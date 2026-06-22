@@ -26,7 +26,18 @@ src/
 
 Routes: `/` · `/experience` · `/skills` · `/about` · `/case-studies`
 
+## Resume
+
+- Source: `public/resume/Swapnil_Mishra_HR_Resume.md`
+- PDF: `public/resume/Swapnil_Mishra_HR_Resume.pdf` (generated)
+- Regenerate after editing markdown:
+
+```bash
+pip install fpdf2
+python3 scripts/generate_resume_pdf.py
+```
+
 ## Before deploy
 
-1. Resume download: `public/resume/Swapnil_Mishra_HR_Resume.md` (served directly)
+1. Edit markdown, regenerate PDF, then commit both files
 2. Update `SITE.email` and `SITE.url` in `src/lib/site.ts`

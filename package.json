@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "resume:pdf": "python3 scripts/generate_resume_pdf.py",
+    "favicons": "python3 scripts/generate_favicons.py"
   },
   "dependencies": {
     "lucide-react": "^0.511.0",
